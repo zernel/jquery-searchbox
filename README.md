@@ -4,11 +4,11 @@ jQuery SearchBox Plugin
 [jQuery](http://jquery.com) plugin that will provide an easy way to add quicklinks support to
 your search box. Like this:
 
-![screenshots](https://github.com/zernel/jquery-searchbox/raw/develop/screenshot.png) 
+![screenshots](https://raw.github.com/zernel/jquery-searchbox/master/screenshot.png)
 
 The plugin can make the basic feature.
 
-![screenshots2](https://github.com/zernel/jquery-searchbox/raw/develop/screenshot2.png) 
+![screenshots2](https://raw.github.com/zernel/jquery-searchbox/master/screenshot2.png)
 
 Usage:
 ------
