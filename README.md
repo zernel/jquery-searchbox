@@ -43,4 +43,4 @@ Usage:
 
 License:
 --------
-jQuery-countTo is released under the [MIT license](http://www.opensource.org/licenses/MIT).
+jQuery-searchbox is released under the [MIT license](http://www.opensource.org/licenses/MIT).
