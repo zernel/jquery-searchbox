@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>jQuery SearchBox Example</title>
+    <style type="text/css" media="all">
+      #s-results {
+        border: 1px solid #dbdbdb;
+        width: 200px;
+        display: none;
+      }
+      #s-results h4 {
+        margin: 5px;
+      }
+      #s-results ul {
+        list-style: none;
+        margin: 0;
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <h1>jQuery SearchBox Example</h1>
+
+    <form>
+      <input id="s-keyword" name="q[name_cont]" type="search" results="0" placeholder="Search Products">
+      <div id="s-results">
+      </div>
+    </form>
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.searchbox.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+        // Ajax Example
+        //$('#s-keyword').searchbox({
+        //  resultsArea: '#s-results'
+        //  , trigger: function(keyword) {
+        //    var data = { q: { name_cont: keyword }};
+        //      $.ajax({
+        //        url: '/products/search',
+        //        type: 'get',
+        //        context: this,
+        //        data: data,
+        //        dataType: 'html',
+        //        success: this.updateResultsArea
+        //      });
+        //    }
+        //  });
+        $('#s-keyword').searchbox({
+          resultsArea: '#s-results'
+          , trigger: function() {
+          var testData = '<h4>Quick Links</h4><ul><li><a href="#">Product 1</a></li><li><a href="#">Product 2</a></li><li><a href="#">Product 3</a></li><li><a href="#">Product 4</a></li></ul>';
+            this.updateResultsArea(testData);
+          }
+        });
+      })
+    </script>
+  </body>
+</html>
